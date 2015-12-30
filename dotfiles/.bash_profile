@@ -1,7 +1,7 @@
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-alias profile="vi ~/.profile"
+alias profile="s ~/.bash_profile"
 alias ll="ls -l"
 alias lo="ls -o"
 alias lh="ls -lh"
@@ -50,6 +50,7 @@ alias rbsrv="ruby -run -e httpd . -p 12345"
 
 
 # Rails
+alias be="bundle exec"
 alias templates="tree --dirsfirst -lFC app/assets/javascripts/templates"
 alias jst="rake jst:watch"
 alias js="tree --dirsfirst -lFC app/assets/javascripts"
@@ -62,6 +63,7 @@ alias views="tree --dirsfirst -lFC app/views"
 alias models="tree --dirsfirst -lFC app/models"
 alias specs="tree --dirsfirst -lFC spec/"
 alias rc="rails console"
+alias rs="bundle exec rails s"
 alias seed="rake db:seed"
 alias create="rake db:create"
 alias drop="rake db:drop"
